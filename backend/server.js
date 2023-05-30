@@ -6,14 +6,21 @@ const morgan = require("morgan");
 
 //hanlders import here
 
-const { getData, getUser } = require("./handlers");
-
-// const {} =("./handlers")
+const {
+ getData,
+ getUser,
+ postData,
+ patchData,
+ deleteData,
+} = require("./handlers");
 
 express()
  .use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader(
+   "Access-Control-Allow-Methods",
+   "GET, POST, PUT, DELETE, PATCH"
+  );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
  })
@@ -25,7 +32,13 @@ express()
  //endpoints
  .get("/api/get-data/", getData)
 
- .get("/api/get-data/:_id", getUser)
+ .get("/api/get-data/:user_id", getUser)
+
+ .post("/api/get-data/:user_id", postData)
+
+ .patch("/api/get-data/:user_id", patchData)
+
+ .delete("/api/get-data/:user_id/:mal_id", deleteData)
 
  //end of endpoints
 
