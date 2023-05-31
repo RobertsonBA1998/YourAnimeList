@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   body {
-    margin: 0;
+    margin: 0px;
     background-color:  #1a1a1a;
     font-family: 'Varela Round', sans-serif;
   }

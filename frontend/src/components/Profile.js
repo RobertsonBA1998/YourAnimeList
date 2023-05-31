@@ -86,7 +86,7 @@ const Profile = () => {
        </Details>
        <Details>Language: {user.locale || "en"} </Details>
        <form onSubmit={fetchData}>
-        <input
+        <InputName
          placeholder="Change username here"
          value={nameInput}
          onChange={(e) => {
@@ -148,6 +148,18 @@ const Button = styled.button`
  margin-left: 10px;
  width: auto;
  height: 20px;
+ border-radius: 2px;
+ background-color: #9e76d6;
+ color: white;
+
+ &:hover {
+  background-color: #824eca;
+  transition-duration: 0.5s;
+ }
+`;
+
+const InputName = styled.input`
+ border-radius: 2px;
 `;
 
 export default Profile;
