@@ -20,7 +20,7 @@ YourAnimeList focuses on delivering a user-friendly navigation experience for an
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Handlers Overview](#handlers.js-overview)
+- [Handlers Overview](#handlers-overview)
 - [Contact](#contact)
 
 ## Installation
@@ -56,7 +56,7 @@ To run the backend of the application:
 - **Auth0**: User integration and authentication.
 - **JIKAN API**: Integration of the Jikan API to fetch anime data.
 
-## Handlers.js Overview
+## Handlers Overview
 
 The `handlers.js` file contains a set of functions that interact with the MongoDB database to handle various operations related to user data. These functions serve as the backend API endpoints for managing user information and anime data. [Learn more](handlers.js-overview.md).
 
