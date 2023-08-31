@@ -53,8 +53,6 @@ const Library = () => {
   return <NotLoggedIn>Log in to view your Library</NotLoggedIn>;
  }
 
- console.log(animeData);
-
  return (
   <>
    <h1>Your Library</h1>

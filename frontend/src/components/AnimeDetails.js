@@ -99,10 +99,6 @@ const AnimeDetails = () => {
   }
  };
 
- console.log(animeData);
-
- console.log(message);
-
  return (
   <>
    <CoverBackground src={animeData.images.jpg.large_image_url} />

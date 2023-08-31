@@ -35,7 +35,6 @@ const SearchBar = () => {
   };
  }, []);
 
- console.log(searchData);
  return (
   <SearchContainer ref={containerRef}>
    <form onSubmit={fetchData}>
