@@ -48,13 +48,16 @@ const AnimeDetails = () => {
   }
 
   try {
-   const response = await fetch(`http://localhost:8000/api/get-data/${_id}`, {
-    method: "POST",
-    headers: {
-     "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ mal_id }),
-   });
+   const response = await fetch(
+    `https://youranimeapp.onrender.com/api/get-data/${_id}`,
+    {
+     method: "POST",
+     headers: {
+      "Content-Type": "application/json",
+     },
+     body: JSON.stringify({ mal_id }),
+    }
+   );
    const data = await response.json();
    console.log(data);
 
@@ -77,7 +80,7 @@ const AnimeDetails = () => {
 
   try {
    const response = await fetch(
-    `http://localhost:8000/api/get-data/${_id}/${mal_id}`,
+    `https://youranimeapp.onrender.com/api/get-data/${_id}/${mal_id}`,
     {
      method: "DELETE",
      headers: {

@@ -15,7 +15,7 @@ const Library = () => {
  // Get Library information from the user, which are the mal_id's
  useEffect(() => {
   if (_id) {
-   fetch(`http://localhost:8000/api/get-data/${_id}`)
+   fetch(`https://youranimeapp.onrender.com/api/get-data/${_id}`)
     .then((res) => res.json())
     .then((resData) => {
      setLibraryData(resData.users.mal_data);

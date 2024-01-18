@@ -12,7 +12,7 @@ const Profile = () => {
 
  useEffect(() => {
   if (_id) {
-   fetch(`http://localhost:8000/api/get-data/${_id}`)
+   fetch(`https://youranimeapp.onrender.com/api/get-data/${_id}`)
     .then((res) => res.json())
     .then((resData) => {
      setUserData(resData.users);
@@ -22,7 +22,7 @@ const Profile = () => {
 
  useEffect(() => {
   if (nameInput === "") {
-   fetch(`http://localhost:8000/api/get-data/${_id}`)
+   fetch(`https://youranimeapp.onrender.com/api/get-data/${_id}`)
     .then((res) => res.json())
     .then((resData) => {
      setUserData(resData.users);
@@ -40,7 +40,7 @@ const Profile = () => {
 
  const fetchData = (e) => {
   e.preventDefault();
-  fetch(`http://localhost:8000/api/get-data/${_id}`, {
+  fetch(`https://youranimeapp.onrender.com/api/get-data/${_id}`, {
    method: "PATCH",
    headers: {
     "Content-Type": "application/json",
